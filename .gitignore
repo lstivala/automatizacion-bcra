@@ -1,0 +1,43 @@
+# --- ENTORNOS VIRTUALES ---
+venv/
+gestorTareas/
+.venv/
+env/
+ENV/
+bin/
+include/
+lib/
+lib64/
+share/
+pyvenv.cfg
+
+# --- ARCHIVOS DE BASE DE DATOS LOCALES Y CONFIGURACIÓN ---
+# Ignorar bases de datos locales sqlite, archivos de config sensibles, etc.
+*.db
+*.sqlite
+*.json
+# Si usás un archivo .env para credenciales de la base de datos:
+.env
+
+# --- LOGS Y ARCHIVOS TEMPORALES ---
+*.log
+registro.log
+logs/
+
+# --- ARCHIVOS DE ENTRADA / INSUMOS ---
+# Ignoramos los archivos pesados de datos (.7z y .txt de deudores, padrón, etc.)
+*.7z
+*.txt
+!requirements.txt  # No ignorar el de requerimientos
+
+# --- COMPILADOS DE PYTHON ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# --- CONFIGURACIÓN DE EDITORES DE CÓDIGO ---
+.vscode/
+.idea/
+.DS_Store
